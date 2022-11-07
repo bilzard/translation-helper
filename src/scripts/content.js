@@ -17,7 +17,19 @@ const replaceMap = {
         "table",
         "h2#blob-path",
         ".btn",
-    ]
+    ],
+    "paperswithcode.com": [
+        "table",
+        "div.paper-title",
+        "a.code-table-link",
+        "ul.navbar-nav",
+        "div#libraries-short-list",
+        "div.task-datasets",
+        "div.paper-datasets",
+        "div.paper-tasks",
+        "span.name",
+        "div.sota-select",
+    ],
 }
 
 function setNoTranslate(rootElement, patterns) {
