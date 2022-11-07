@@ -1,18 +1,19 @@
 const replaceMap = {
-    "https://docs.python.org/3/": ["span.pre"],
+    "docs.python.org": ["span.pre"],
+    "ar5iv.labs.arxiv.org": [
+        ".ltx_tabular",
+        ".ltx_biblist",
+        ".ltx_cite",
+        "h1.ltx_title",
+        ".ltx_authors",
+    ],
 }
 
-const pageUrl = window.location.href;
-const urlPatterns = Object.keys(replaceMap);
+const pageHost = window.location.host;
+const patterns = pageHost in replaceMap ? replaceMap[pageHost] : [];
 
-// disable translation for all matched elements
-for (const urlPattern of urlPatterns) {
-    if (pageUrl.startsWith(urlPattern)) {
-        for (const selector of replaceMap[urlPattern]) {
-            for (const element of document.querySelectorAll(selector)) {
-                element.classList.add("notranslate");
-            }
-        }
-        break;
+for (const selector of patterns) {
+    for (const element of document.querySelectorAll(selector)) {
+        element.classList.add("notranslate");
     }
 }
