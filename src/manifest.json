@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Translation Helper",
+    "version": "1.0",
+    "description": "Help you translate with non-translation-friendly web sites.",
+    "content_scripts": [
+        {
+            "js": [
+                "scripts/content.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}
