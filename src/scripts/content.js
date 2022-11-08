@@ -30,6 +30,14 @@ const replaceMap = {
         "span.name",
         "div.sota-select",
     ],
+    "arxiv.org": [
+        "h1.title",
+        "div.authors",
+        "title",
+        "div.extra-services",
+        "div#header",
+        "div.subheader",
+    ],
 }
 
 function setNoTranslate(rootElement, patterns) {
