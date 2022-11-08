@@ -1,6 +1,6 @@
 # Translation Helper
 
-This chrome extention disables translation for the elements you don't want to be translated (e.g. codes).
+This chrome extention disables translation for the elements you don't want to be translated (e.g. source code, table, cite, paper title etc.).
 
 ## How this works
 
