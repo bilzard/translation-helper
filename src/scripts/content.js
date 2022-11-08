@@ -8,6 +8,7 @@ const replaceMap = {
         ".ltx_authors",
     ],
     "github.com": [
+        "nav",
         "header.Header",
         "div#repository-container-header",
         "div.file-navigation",
@@ -17,6 +18,8 @@ const replaceMap = {
         "table",
         "h2#blob-path",
         ".btn",
+        "h1.vcard-names",
+        "title",
     ],
     "paperswithcode.com": [
         "table",
