@@ -20,6 +20,7 @@ const replaceMap = {
         ".btn",
         "h1.vcard-names",
         "title",
+        "a[itemprop='name codeRepository']",
     ],
     "paperswithcode.com": [
         "table",
