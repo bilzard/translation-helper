@@ -38,6 +38,16 @@ const replaceMap = {
         "div#header",
         "div.subheader",
     ],
+    "www.kaggle.com": [
+        "i",
+        "button",
+        "input",
+        "nav",
+        "div.sc-bSakgD",
+        "div.sc-gFGZVQ",
+        "div[data-testid='searchContainer']",
+        "div.profile__user-container",
+    ]
 }
 
 function setNoTranslate(rootElement, patterns) {
