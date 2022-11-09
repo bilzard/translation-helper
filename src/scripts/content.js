@@ -64,16 +64,18 @@ function setNoTranslate(rootElement, patterns) {
 }
 
 const pageHost = window.location.host;
-const patterns = pageHost in replaceMap ? replaceMap[pageHost] : [];
-setNoTranslate(document, patterns);
+if (pageHost in replaceMap) {
+    const patterns = replaceMap[pageHost];
+    setNoTranslate(document, patterns);
 
-const observer = new MutationObserver((mutations, _) => {
-    mutations.forEach((mutation) => {
-        setNoTranslate(mutation.target, patterns);
+    const observer = new MutationObserver((mutations, _) => {
+        mutations.forEach((mutation) => {
+            setNoTranslate(mutation.target, patterns);
+        });
     });
-});
 
-observer.observe(document.body,
-    {
-        childList: true, subtree: true, attributes: false, characterData: false
-    });
+    observer.observe(document.body,
+        {
+            childList: true, subtree: true, attributes: false, characterData: false
+        });
+}
