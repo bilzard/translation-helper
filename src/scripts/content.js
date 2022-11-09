@@ -52,7 +52,13 @@ const replaceMap = {
         "div[data-testid='searchContainer']",
         "div.profile__user-container",
         "div.MathJax_Display",
-    ]
+    ],
+    "scikit-learn.org": [
+        "span.pre",
+        ".sig",
+        "div.sk-navbar-collapse",
+        "span.classifier",
+    ],
 }
 
 function setNoTranslate(rootElement, patterns) {
