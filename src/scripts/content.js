@@ -24,6 +24,9 @@ const replaceMap = {
         "a[itemprop='name codeRepository']",
         "div.blob-code-content", // code
     ],
+    "notebooks.githubusercontent.com": [
+        "pre",  // code block
+    ],
     "paperswithcode.com": [
         "table",
         "div.paper-title",
