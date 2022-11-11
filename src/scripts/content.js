@@ -59,6 +59,14 @@ const replaceMap = {
         "div.sk-navbar-collapse",
         "span.classifier",
     ],
+    "en.wikipedia.org": [
+        "pre",  // code block
+        "cite",  // citation
+    ],
+    "en.m.wikipedia.org": [
+        "pre",  // code block
+        "cite",  // citation
+    ],
 }
 
 function setNoTranslate(rootElement, patterns) {
