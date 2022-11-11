@@ -15,7 +15,6 @@ const replaceMap = {
         "div.Box-header",
         "nav.menu",
         "div.mb-3",
-        "table",
         "h2#blob-path",
         ".btn",
         "h1.vcard-names",
