@@ -21,3 +21,8 @@ This extension parses HTML elements and adds `notranlate` class attribute[1] to 
 |      arxiv.org       |     ![ArXivA](https://user-images.githubusercontent.com/36561962/200464821-db5d5ac0-d6bf-4d1c-b07a-97e958cb6383.png)     |     ![ArXivB](https://user-images.githubusercontent.com/36561962/200465956-4a5ff3c2-bf3c-4c14-a509-95b8c23cb591.png)     |
 | ar5iv.labs.arxiv.org |     ![Ar5iv](https://user-images.githubusercontent.com/36561962/200460918-64e90a6a-d4ef-4df0-aae2-4175ec2f3dd0.png)      |     ![Ar5iv](https://user-images.githubusercontent.com/36561962/200460777-2d0e563d-84f5-4cdc-9d6b-cb1f7994f4e5.png)      |
 |    www.kaggle.com    |    ![KaggleA](https://user-images.githubusercontent.com/36561962/200487197-057b916f-489d-49da-95eb-7447fa7c3324.png)     |    ![KaggleB](https://user-images.githubusercontent.com/36561962/200487175-9f92f648-b7d7-4a86-868f-58caebd3bbb4.png)     |
+
+## Installation
+
+1. clone this repository
+2. [load an unpacked extension in developer mode](https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked) (add resources in src directory)
