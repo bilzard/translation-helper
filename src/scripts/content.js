@@ -25,7 +25,7 @@ const replaceMap = {
         "div.blob-code-content", // code
     ],
     "notebooks.githubusercontent.com": [
-        "pre",  // code block
+        "div.jp-CodeCell",  // code cell
     ],
     "paperswithcode.com": [
         "table",
