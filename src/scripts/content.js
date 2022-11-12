@@ -52,8 +52,6 @@ const replaceMap = {
         "button",
         "input",
         "nav",
-        "div.sc-bSakgD",
-        "div.sc-gFGZVQ",
         "div[data-testid='searchContainer']",
         "div.profile__user-container",
         "div.MathJax_Display",
