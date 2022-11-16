@@ -6,7 +6,6 @@ const replaceMap = {
         ".ltx_cite",
         "h1.ltx_title",
         ".ltx_authors",
-        ".ltx_caption",  // caption of pseudo-code
         ".ltx_listing",  // pseudo-code
     ],
     "github.com": [
