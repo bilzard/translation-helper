@@ -69,6 +69,9 @@ const replaceMap = {
         "pre",  // code block
         "cite",  // citation
     ],
+    "stanfordmlgroup.github.io": [
+        "pre",
+    ]
 }
 
 function setNoTranslate(rootElement, patterns) {
