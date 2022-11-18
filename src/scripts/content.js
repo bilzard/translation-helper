@@ -63,21 +63,16 @@ const replaceMap = {
         "div.sk-navbar-collapse",
         "span.classifier",
     ],
-    "en.wikipedia.org": [
-        "pre",  // code block
-        "cite",  // citation
-    ],
-    "en.m.wikipedia.org": [
-        "pre",  // code block
-        "cite",  // citation
-    ],
-    "stanfordmlgroup.github.io": [
-        "pre",
-    ],
     "ipython.readthedocs.io": [
         "span.pre",
     ],
 }
+
+const commonPatterns = [
+    "pre",
+    "i",
+    "cite",
+]
 
 function setNoTranslate(rootElement, patterns) {
     for (const selector of patterns) {
@@ -103,3 +98,9 @@ if (pageHost in replaceMap) {
             childList: true, subtree: true, attributes: false, characterData: false
         });
 }
+/**
+ * common rule
+ *
+ * insertion is executed only for static web pages (to avoid unintended consumption of computing resource)
+ */
+setNoTranslate(document, commonPatterns)
