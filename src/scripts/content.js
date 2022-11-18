@@ -1,5 +1,7 @@
 const replaceMap = {
-    "docs.python.org": ["span.pre"],
+    "docs.python.org": [
+        "span.pre",
+    ],
     "ar5iv.labs.arxiv.org": [
         ".ltx_tabular",
         ".ltx_biblist",
