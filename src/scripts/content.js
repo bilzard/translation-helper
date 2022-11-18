@@ -71,7 +71,10 @@ const replaceMap = {
     ],
     "stanfordmlgroup.github.io": [
         "pre",
-    ]
+    ],
+    "ipython.readthedocs.io": [
+        "span.pre",
+    ],
 }
 
 function setNoTranslate(rootElement, patterns) {
