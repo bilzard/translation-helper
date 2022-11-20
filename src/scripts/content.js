@@ -66,6 +66,12 @@ const replaceMap = {
     "ipython.readthedocs.io": [
         "span.pre",
     ],
+    "localhost:8888": [
+        "div.jp-CodeCell",
+        "div[role='navigation']",
+        "div#filebrowser",
+        "div.lm-TabBar",
+    ],
 }
 
 const commonPatterns = [
