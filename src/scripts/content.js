@@ -72,6 +72,9 @@ const replaceMap = {
         "div#filebrowser",
         "div.lm-TabBar",
     ],
+    "pandas.pydata.org": [
+        "span.pre",
+    ],
 }
 
 const commonPatterns = [
