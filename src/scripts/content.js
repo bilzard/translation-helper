@@ -75,6 +75,9 @@ const replaceMap = {
     "pandas.pydata.org": [
         "span.pre",
     ],
+    "towardsdatascience.com": [
+        "pre",
+    ]
 }
 
 const commonPatterns = [
