@@ -71,6 +71,7 @@ const replaceMap = {
         "div[role='navigation']",
         "div#filebrowser",
         "div.lm-TabBar",
+        "div.CodeMirror-code",
     ],
     "pandas.pydata.org": [
         "span.pre",
