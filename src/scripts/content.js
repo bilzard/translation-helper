@@ -96,6 +96,28 @@ function setNoTranslate(rootElement, patterns) {
     }
 }
 
+function waitForElements(selector, rootNode = document.body) {
+    return new Promise(resolve => {
+        const observer = new MutationObserver(mutations => {
+            mutations.forEach(mutation => {
+                mutation.addedNodes.forEach(node => {
+                    if (typeof node.matches === "function" && node.matches(selector)) {
+                        // TODO: suppress unnecessary function calls
+                        resolve(document.querySelectorAll(selector));
+                        observer.disconnect();
+                    }
+                });
+            });
+        });
+
+        observer.observe(rootNode, {
+            attributes: false,
+            childList: true,
+            subtree: true
+        });
+    });
+}
+
 const pageHost = window.location.host;
 if (pageHost in replaceMap) {
     const patterns = replaceMap[pageHost];
@@ -118,3 +140,19 @@ if (pageHost in replaceMap) {
  * insertion is executed only for static web pages (to avoid unintended consumption of computing resource)
  */
 setNoTranslate(document, commonPatterns)
+
+/**
+ * Experimental: set `notranslate` class for MathJax Elements
+ *
+ * current issues:
+ *   - redundant function call
+ *   - optimal delay time varies in client environments
+ */
+waitForElements("span.MathJax").then(nodes => {
+    setTimeout(() => {
+        nodes.forEach(node => {
+            console.log("MathJax element was found")
+            node.classList.add("notranslate");
+        });
+    }, 500);
+});
